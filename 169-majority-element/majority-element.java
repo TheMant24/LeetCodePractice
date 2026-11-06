@@ -7,11 +7,12 @@ class Solution {
             if(nums[i] == candidate) count++;
             else if(nums[i] != candidate) count--;
         }
-        count = 0;
-        for(int i = 0; i < nums.length; i++){
-            if(nums[i] == candidate) count++;
-            if(count > nums.length/2) return candidate;
-        }
-        return 99999;
+        return candidate;
+        // count = 0;
+        // for(int i = 0; i < nums.length; i++){
+        //     if(nums[i] == candidate) count++;
+        //     if(count > nums.length/2) return candidate;
+        // }
+        // return 99999;
     }
 }
